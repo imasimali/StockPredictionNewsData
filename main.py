@@ -6,6 +6,7 @@ from sklearn.preprocessing import MinMaxScaler
 import pandas as pd
 
 app = Flask(__name__)
+
 model = keras.models.load_model("invisor2.h5",custom_objects={'KerasLayer':hub.KerasLayer})
 
 textual_file=pd.read_csv("data.csv")
