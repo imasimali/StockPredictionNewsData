@@ -1,0 +1,6 @@
+Flask
+tensorflow
+tensorflow-hub==0.12.0
+tensorflow_text==2.7.0
+sklearn
+pandas
