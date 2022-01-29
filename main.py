@@ -1,12 +1,14 @@
 from flask import Flask, request, jsonify
-from tensorflow import keras
+from keras import keras
 import tensorflow_hub as hub
 import tensorflow_text
 from sklearn.preprocessing import MinMaxScaler
 import pandas as pd
 
 app = Flask(__name__)
-model = keras.models.load_model("invisor2.h5",custom_objects={'KerasLayer':hub.KerasLayer})
+
+model = keras.models.load_model('invisor2.h5', custom_objects={'KerasLayer':hub.KerasLayer})
+
 # text=pd.read_csv("data.csv")
 # num=pd.read_csv("AAPL.csv")
 
